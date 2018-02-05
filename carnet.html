@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>Censo Carnet de la Patria</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+ <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+      <!--header-->
+    <div class="header">
+       <img src="http://localhost/carnet/imagen/abajo.png"/>
+    </div>  	
+     <!--fin header-->
+   <div class="container-fluid cuerpo">   
+   <form action="registro.php"method="POST" enctype="multipart/form-data"> 
+              <hr>     
+  <div class="row">
+        <div class="col-sm-2 col-md-2" >
+			  <select class="custom-select btn-primary" name="grado" required>
+			  <option selected>Grado:</option>
+			  <option value="capitan">Capitan</option>
+			  <option value="primer teniente">Primer Teniente</option>
+			  <option value="teniente">Teniente</option>
+			  <option value="civil">Civil</option>
+			 </select>
+         </div>
+	      <hr>
+         <div class="col-sm-2 col-md-2">
+			  <select class="custom-select btn-primary " name="componente">
+			  <option selected>Componente:</option>
+			  <option value="ejercito">Ejercito</option>
+			  <option value="armada">Armada</option>
+			  <option value="aviacion">Aviacion</option>
+			  <option value="guardi nacional">Guardia Nacional</option>
+			  <option value="milicia bolivariana">Milicia Bolivariana</option>
+			   <option value="ninguno">Ninguno</option>
+			 </select>
+         </div>
+	      <hr>
+           <div class="col-sm-2 col-md-2">
+			  <select class="custom-select btn-primary" name="sexo">
+			  <option selected>Sexo:</option>
+			  <option value="maculino">Masculino</option>
+			  <option value="femenino">Femenino</option>
+			  </select>
+         </div>
+	      <hr>
+	       <div class="col-sm-2 col-md-2">
+			  <select class="custom-select btn-primary" name="situacion">
+			  <option selected>Situacion:</option>
+			  <option value="activo">Activo</option>
+			  <option value="reserva activa">Reserva Activa</option>
+			  <option value="hijo">Hijo</option>
+			  <option value="hija">Hija</option>
+			  <option value="hermana">Hermana</option>
+			  </select>
+         </div>
+	        <hr>
+	        <div class="col-sm-2 col-md-2">
+			  <select class="custom-select btn-primary" name="estado_civil">
+			  <option selected>Estado Civil:</option>
+			  <option value="soltero">Soltero (a)</option>
+			  <option value="casado">Casado (a)</option>
+			  <option value="divorsiado">Divorsiado (a)</option>
+			  <option value="viudo">Viudo (a)</option>
+			  </select>
+	       </div>
+	</div>  
+	        <hr>
+           <div class="row">
+          <div class="col-sm-2 col-md-2">
+        <label for="nombre">Nombre y Apellidos </label>
+            <input type="text" name="nombre" class="form-input rounded" required/>
+          </div>              
+         <div class="col-sm-2 col-md-2">
+           <label for="cedula">Cedula</label>
+           <input type="text" name="cedula" class="form-input rounded" required/> 
+	     </div> 
+	     <hr>
+        <div class="col-sm-2 col-md-2">
+ 	  	<select class="custom-select btn-primary" name="discapacidad">
+	     <option selected>Discapacidad</option>
+	     <option value="si">Si</option>
+	     <option value="no">No</option>
+	    </select> 
+        </div>
+			<hr>
+         <div class="col-sm-2 col-md-2">
+	     <label for="r_diagnostico">Diagnostico</label>
+         <input type="text" name="r_diagnostico" class="form-input rounded"/>
+	     </div>  
+	     <div class="col-sm-2 col-md-2">
+     	<select class="custom-select btn-primary" name="gravidez">
+	     <option selected>Gravidez</option>
+	     <option value="si">Si</option>
+	     <option value="no">No</option>
+	    </select> 
+	   </div>
+	   </div>
+<hr>
+	 <!--------------------segunda fila------>
+<div class="row">
+  <div class="col col-sm-6 col-md-6">
+   <center><label for="nombre_fallecido">Nombre y Apellidos Militar (F)</label>
+	<input type="text" name="nombre_fallecido" class="form-input rounded"/>  </center>  
+  </div>  
+ <hr>  
+<div class="col-sm-6 col-md-6">
+	<center><label for="cedula_fallecido">Cedula Militar (F)</label>
+	<input type="text" name="cedula_fallecido" class="form-input rounded"/> </center>
+</div>  
+</div>
+ <hr>
+ <div class="row">
+<div class="col-sm-2 col-md-2">
+  <select class="custom-select btn-primary"  name="afiliado_con_derecho">
+  <option selected>Nº de afiliados con derechos</option>
+  <option value="1">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  </select>
+</div>
+ <div class="col-sm-2 col-md-2">
+	<select class="custom-select btn-primary" name="grupo_con_carnet">
+	  <option selected>Nº de Carnetizados con Carnet de la Patria del Grupo</option>
+	  <option value="1">0</option>
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5">5</option>
+	  <option value="6">6</option>
+	 </select>
+</div> 
+ <div class="col-sm-2 col-md-2">
+	<select class="custom-select btn-primary" name="vive_padre">
+	  <option selected>Vive el Padre?</option>
+	  <option value="si">Si</option>
+	  <option value="no">No</option>
+	  </select>
+</div>
+  <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="vive_madre">
+	  <option selected>Vive la Madre?</option>
+	  <option value="si">Si</option>
+	  <option value="no">No</option>
+	  </select>
+ </div>
+ <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="vive_esposo">
+	  <option selected>Vive el Esposo (A)?</option>
+	  <option value="si">Si</option>
+	  <option value="no">No</option>
+	  </select>
+ </div>
+   <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="numero_hijos">
+	  <option selected>Nº de Hijos?</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>
+	  </select>
+ </div>
+</div>
+<!------------final de segunda fila------------> 
+<hr> 	    
+<!------------tercera fila------------>   
+ <div class="row">
+ <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="hijos_masculinos">
+	  <option selected>Hijos Masculinos?</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>>
+	  </select>
+ </div>	
+ <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="hijas_femeninas">
+	  <option selected>Hijas Femeninas</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>>
+	  </select>
+ </div>	
+  <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="hijos_mayores_26">
+	  <option selected>Hijos (a) Mayores de 26 años</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>
+	  </select>
+ </div>	
+   <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="hijos_mayores_16">
+	  <option selected>Hijos (a) Mayores de 16 años</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>
+	  </select>
+ </div>
+   <div class="col-sm-2 col-md-2">
+	  <select class="custom-select btn-primary" name="hijos_menores_16">
+	  <option selected>Hijos (a) Menores de 16 años</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>
+	  </select>
+ </div>		
+ 	
+ </div>
+ <!------------final tercera fila------------>
+ <hr>
+ <!------------cuarta fila------------------>	  
+ 
+ <div class="row">
+ <div class="col-sm-2 col-md-2">
+ 	  <select class="custom-select btn-primary" name="hijos_enfermedad">
+	  <option selected>Hijos con Enfermedad Catastrofica</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>
+	  </select> 
+ </div>
+  <div class="col-sm-2 col-md-2">
+   <label for="hijos_diagnostico">Diagnostico</label>
+   <input type="text" name="hijos_diagnostico" class="form-input rounded"/> 
+  </div> 
+  <div class="col-sm-2 col-md-2">
+ 	  <select class="custom-select btn-primary" name="hijos_discapacidad">
+	  <option selected>Hijos con Discapacidad</option>
+	   <option value="1">0</option>
+	   <option value="1">1</option>
+	   <option value="2">2</option>
+	   <option value="3">3</option>
+	   <option value="4">4</option>
+	   <option value="5">5</option>
+	   <option value="6">6</option>
+	  </select> 
+ </div>
+  <div class="col-sm-2 col-md-2">
+   <label for="hijos_dis_diagostico">Diagnostico</label>
+   <input type="text" name="hijos_dis_diagostico" class="form-input rounded"/> 
+  </div> 
+ <div class="col-sm-2 col-md-2">
+   <label for="telefono">Telefono</label>
+   <input type="text" name="telefono" class="form-input rounded" required/> 
+  </div> 
+   <div class="col-sm-2 col-md-2">
+   <label for="email">Correo Electronico</label>
+   <input type="email" name="email" class="form-input rounded" required/> 
+  </div> 
+ 
+ 
+ 
+ </div> 
+ <!------------final cuarta fila------------>  
+  <!--------------------botones-------------> 
+	  <div class="container">
+        <button type="submit" class="btn btn-primary">guardar cambios</button>
+       <a href="index.html"> <button type="button" class="btn btn-secondary">Cerrar</button>  </a>
+      </div>   
+      <!-------------------final de botones-------------------------------->
+
+        
+         
+          <!--------------------------------modal enviar----------------------> 
+</form>
+ 
+  </div>
+
+   <hr>
+ 
+ 
+
+
+    <!--footer-->   
+   <div class="modal-footer ">
+    <img src="http://localhost/carnet/imagen/arriba.png"/>   
+   </div>
+     <!--fin footer-->
+ <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+<!---------------------------------------------------------------------->
+    
+
+</body>
+
+</html>
